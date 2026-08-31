@@ -1,0 +1,2193 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Kenan.SMP.Syria | تقنية المايكروبجمنتشن لفروة الرأس — اللاذقية</title>
+    <meta name="description"
+        content="Kenan.SMP.Syria — عيادة متخصصة في تقنية المايكروبجمنتشن لفروة الرأس (SMP) في اللاذقية، سوريا. دقة، تصميم فردي، ونتيجة تبدو طبيعية.">
+    <meta name="keywords"
+        content="SMP اللاذقية, مايكروبجمنتشن اللاذقية, SMP سوريا, مايكروبجمنتشن فروة الرأس سوريا, تقنية SMP">
+    <meta property="og:title" content="Kenan.SMP.Syria — الدقة التي تبدو طبيعية">
+    <meta property="og:description" content="تقنية المايكروبجمنتشن لفروة الرأس في اللاذقية، سوريا.">
+    <meta property="og:type" content="business.business">
+    <meta property="og:locale" content="ar_AR">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&family=Jost:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "name": "Kenan.SMP.Syria",
+  "image": "",
+  "telephone": "+905352677267",
+  "email": "kenanhamadokh@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "الكورنيش الغربي",
+    "addressLocality": "اللاذقية",
+    "addressCountry": "SY"
+  },
+  "sameAs": ["https://instagram.com/kenanhamadokh"]
+}
+</script>
+    <style>
+        /* ============ TOKENS ============ */
+        :root {
+            --black-deep: #070707;
+            --black-soft: #111111;
+            --pearl: #F4F1EB;
+            --pearl-warm: #E8E4DC;
+            --grey: #92908B;
+            --white: #FFFFFF;
+            --font-display: 'Alexandria', 'IBM Plex Sans Arabic', sans-serif;
+            --font-body: 'IBM Plex Sans Arabic', 'Alexandria', sans-serif;
+            --font-meta: 'Jost', sans-serif;
+            --ease: cubic-bezier(.22, 1, .36, 1);
+            --container: 1320px;
+            --edge: clamp(20px, 5vw, 72px);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--pearl);
+            color: var(--black-deep);
+            overflow-x: hidden;
+            font-weight: 400;
+            line-height: 1.6;
+        }
+
+        img,
+        svg {
+            display: block;
+            max-width: 100%;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        button {
+            font-family: inherit;
+            border: none;
+            background: none;
+            cursor: pointer;
+            color: inherit;
+        }
+
+        ::selection {
+            background: var(--black-deep);
+            color: var(--pearl);
+        }
+
+        .container {
+            max-width: var(--container);
+            margin: 0 auto;
+            padding: 0 var(--edge);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.001ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.001ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+
+        /* focus states */
+        a:focus-visible,
+        button:focus-visible,
+        input:focus-visible,
+        textarea:focus-visible {
+            outline: 2px solid var(--black-deep);
+            outline-offset: 3px;
+        }
+
+        /* ============ TEXTURE PLACEHOLDER IMAGES ============ */
+        .ph {
+            position: relative;
+            overflow: hidden;
+            background:
+                radial-gradient(circle at 30% 20%, rgba(255, 255, 255, .10), transparent 55%),
+                linear-gradient(150deg, #1a1a1a 0%, #050505 55%, #000 100%);
+        }
+
+        .img-fill {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .ph.light {
+            background:
+                radial-gradient(circle at 70% 25%, rgba(255, 255, 255, .9), transparent 55%),
+                linear-gradient(150deg, #EFEBE2 0%, #DAD4C6 60%, #CFC8B8 100%);
+        }
+
+        .ph::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image:
+                repeating-linear-gradient(115deg, rgba(255, 255, 255, .045) 0px, rgba(255, 255, 255, .045) 1px, transparent 1px, transparent 68px);
+            mix-blend-mode: overlay;
+        }
+
+        .ph .ph-mark {
+            position: absolute;
+            bottom: 18px;
+            inset-inline-start: 20px;
+            font-family: var(--font-meta);
+            font-size: 11px;
+            letter-spacing: .14em;
+            color: rgba(244, 241, 235, .55);
+            z-index: 2;
+            text-shadow: 0 1px 6px rgba(0, 0, 0, .5);
+        }
+
+        .ph.light .ph-mark {
+            color: rgba(7, 7, 7, .4);
+        }
+
+        /* ============ GLASS ============ */
+        .glass-dark {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.14);
+        }
+
+        .glass-light {
+            background: rgba(255, 255, 255, 0.55);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.65);
+        }
+
+        /* ============ NAV ============ */
+        .nav {
+            position: fixed;
+            top: 16px;
+            inset-inline: 0;
+            z-index: 900;
+            display: flex;
+            justify-content: center;
+            padding: 0 var(--edge);
+            transition: top .5s var(--ease);
+        }
+
+        .nav-inner {
+            width: 100%;
+            max-width: 1180px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 22px;
+            border-radius: 100px;
+            background: rgba(7, 7, 7, 0.55);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            color: var(--pearl);
+            transition: padding .4s var(--ease), background .4s var(--ease), border-color .4s var(--ease);
+        }
+
+        .nav.scrolled .nav-inner {
+            padding: 9px 20px;
+            background: rgba(7, 7, 7, 0.78);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .nav-brand {
+            font-family: var(--font-display);
+            font-size: 15px;
+            font-weight: 600;
+            letter-spacing: .01em;
+            white-space: nowrap;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            font-size: 14.5px;
+        }
+
+        .nav-links a {
+            position: relative;
+            padding: 4px 0;
+            opacity: .88;
+            transition: opacity .3s;
+        }
+
+        .nav-links a:hover {
+            opacity: 1;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            height: 1px;
+            background: var(--pearl);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform .35s var(--ease);
+        }
+
+        .nav-links a:hover::after {
+            transform: scaleX(1);
+        }
+
+        .nav-cta {
+            font-size: 13.5px;
+            padding: 10px 22px;
+            border-radius: 100px;
+            background: var(--pearl);
+            color: var(--black-deep);
+            font-weight: 500;
+            transition: transform .3s var(--ease), background .3s;
+            white-space: nowrap;
+        }
+
+        .nav-cta:hover {
+            background: var(--white);
+            transform: translateY(-1px);
+        }
+
+        .nav-burger {
+            display: none;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, .08);
+        }
+
+        .nav-burger span {
+            display: block;
+            width: 16px;
+            height: 1px;
+            background: var(--pearl);
+            position: relative;
+        }
+
+        .nav-burger span::before,
+        .nav-burger span::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            width: 16px;
+            height: 1px;
+            background: var(--pearl);
+            transition: transform .3s;
+        }
+
+        .nav-burger span::before {
+            top: -5px;
+        }
+
+        .nav-burger span::after {
+            top: 5px;
+        }
+
+        .mobile-menu {
+            position: fixed;
+            inset: 0;
+            z-index: 999;
+            background: rgba(7, 7, 7, .92);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            display: flex;
+            flex-direction: column;
+            padding: 24px var(--edge) 40px;
+            transform: translateY(-100%);
+            transition: transform .55s var(--ease);
+            visibility: hidden;
+        }
+
+        .mobile-menu.open {
+            transform: translateY(0);
+            visibility: visible;
+        }
+
+        .mm-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--pearl);
+        }
+
+        .mm-close {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, .08);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--pearl);
+            font-size: 18px;
+        }
+
+        .mm-links {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        .mm-links a {
+            font-family: var(--font-display);
+            color: var(--pearl);
+            font-size: clamp(28px, 8vw, 38px);
+            font-weight: 500;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, .08);
+            opacity: 0;
+            transform: translateY(16px);
+        }
+
+        .mm-cta {
+            margin-top: 20px;
+            text-align: center;
+            padding: 18px;
+            border-radius: 100px;
+            background: var(--pearl);
+            color: var(--black-deep);
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        /* ============ HERO ============ */
+        .hero {
+            position: relative;
+            min-height: 100svh;
+            background: var(--black-deep);
+            color: var(--pearl);
+            display: flex;
+            align-items: flex-end;
+            overflow: hidden;
+        }
+
+        .hero-grid {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            padding: 120px var(--edge) 40px;
+            position: relative;
+            z-index: 3;
+        }
+
+        .hero-media {
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+        }
+
+        .hero-media .ph {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .hero-media::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(0deg, rgba(7, 7, 7, 0.97) 2%, rgba(7, 7, 7, 0.55) 42%, rgba(7, 7, 7, 0.15) 70%);
+            z-index: 2;
+        }
+
+        .hero-loc {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-family: var(--font-meta);
+            font-size: 12px;
+            letter-spacing: .12em;
+            padding: 8px 16px;
+            border-radius: 100px;
+            width: fit-content;
+            margin-bottom: 22px;
+            opacity: 0;
+        }
+
+        .hero-loc span.dot {
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: var(--pearl);
+        }
+
+        .hero h1 {
+            font-family: var(--font-display);
+            font-weight: 600;
+            font-size: clamp(38px, 8.4vw, 88px);
+            line-height: 1.06;
+            letter-spacing: -.01em;
+            max-width: 820px;
+        }
+
+        .hero h1 .line {
+            overflow: hidden;
+            display: block;
+        }
+
+        .hero h1 .line span {
+            display: block;
+            transform: translateY(110%);
+        }
+
+        .hero-sub {
+            font-size: clamp(15px, 2vw, 19px);
+            color: rgba(244, 241, 235, .78);
+            max-width: 460px;
+            margin-top: 26px;
+            font-weight: 300;
+            opacity: 0;
+            transform: translateY(14px);
+        }
+
+        .hero-ctas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-top: 36px;
+            opacity: 0;
+            transform: translateY(14px);
+        }
+
+        .btn-primary {
+            padding: 16px 32px;
+            border-radius: 100px;
+            background: var(--pearl);
+            color: var(--black-deep);
+            font-weight: 500;
+            font-size: 15px;
+            transition: transform .35s var(--ease), background .3s;
+            display: inline-block;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            background: var(--white);
+        }
+
+        .btn-ghost {
+            padding: 16px 30px;
+            border-radius: 100px;
+            border: 1px solid rgba(244, 241, 235, .35);
+            color: var(--pearl);
+            font-weight: 400;
+            font-size: 15px;
+            transition: border-color .3s, background .3s;
+        }
+
+        .btn-ghost:hover {
+            border-color: var(--pearl);
+            background: rgba(255, 255, 255, .06);
+        }
+
+        .hero-scroll {
+            position: absolute;
+            bottom: 28px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 4;
+            width: 1px;
+            height: 46px;
+            background: linear-gradient(rgba(244, 241, 235, 0), rgba(244, 241, 235, .6));
+            opacity: 0;
+        }
+
+        .hero-scroll::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: -2px;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: var(--pearl);
+            animation: scrolldot 2.2s ease-in-out infinite;
+        }
+
+        @keyframes scrolldot {
+            0% {
+                top: 0;
+                opacity: 1;
+            }
+
+            90% {
+                opacity: 0;
+            }
+
+            100% {
+                top: 100%;
+                opacity: 0;
+            }
+        }
+
+        /* ============ SECTION SPACING ============ */
+        section {
+            position: relative;
+        }
+
+        .pad {
+            padding: clamp(80px, 11vw, 150px) 0;
+        }
+
+        .eyebrow-word {
+            font-family: var(--font-meta);
+            font-size: 12px;
+            letter-spacing: .1em;
+            color: var(--grey);
+        }
+
+        /* ============ INTRO ============ */
+        .intro {
+            background: var(--pearl);
+        }
+
+        .intro-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+
+        .intro-statement {
+            font-family: var(--font-display);
+            font-weight: 500;
+            font-size: clamp(30px, 5.4vw, 58px);
+            line-height: 1.18;
+            letter-spacing: -.01em;
+            max-width: 780px;
+        }
+
+        .intro-body {
+            max-width: 520px;
+            margin-top: 8px;
+            font-size: 16px;
+            color: #3a3a38;
+            font-weight: 300;
+            line-height: 1.9;
+        }
+
+        .intro-body p+p {
+            margin-top: 16px;
+        }
+
+        .intro-list {
+            margin-top: 44px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 26px 30px;
+            border-top: 1px solid rgba(7, 7, 7, .12);
+            padding-top: 30px;
+            max-width: 640px;
+        }
+
+        .intro-list div {
+            font-size: 15px;
+            font-weight: 500;
+            position: relative;
+            padding-inline-start: 18px;
+        }
+
+        .intro-list div::before {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 9px;
+            width: 6px;
+            height: 1px;
+            background: var(--black-deep);
+        }
+
+        /* ============ WHAT IS SMP ============ */
+        .smp-explain {
+            background: var(--black-deep);
+            color: var(--pearl);
+            overflow: hidden;
+        }
+
+        .smp-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 0;
+            align-items: center;
+        }
+
+        .smp-media {
+            aspect-ratio: 4/5;
+            border-radius: 2px;
+        }
+
+        .smp-copy h2 {
+            font-family: var(--font-display);
+            font-weight: 500;
+            font-size: clamp(28px, 5vw, 46px);
+            line-height: 1.22;
+        }
+
+        .smp-copy p {
+            margin-top: 22px;
+            color: rgba(244, 241, 235, .72);
+            font-size: 15.5px;
+            font-weight: 300;
+            line-height: 1.95;
+            max-width: 480px;
+        }
+
+        .smp-copy p+p {
+            margin-top: 14px;
+        }
+
+        /* ============ RESULTS ============ */
+        .results {
+            background: var(--pearl);
+        }
+
+        .results-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 52px;
+        }
+
+        .results-head h2 {
+            font-family: var(--font-display);
+            font-weight: 500;
+            font-size: clamp(32px, 5.6vw, 58px);
+        }
+
+        .results-mosaic {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+
+        .r-main {
+            aspect-ratio: 4/5;
+            border-radius: 2px;
+        }
+
+        .r-sub-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .r-sub {
+            aspect-ratio: 1/1;
+            border-radius: 2px;
+        }
+
+        .r-wide {
+            aspect-ratio: 16/9;
+            border-radius: 2px;
+            grid-column: 1/-1;
+        }
+
+        /* Before/After Slider */
+        .ba {
+            position: relative;
+            margin-top: 60px;
+            aspect-ratio: 4/3;
+            max-width: 760px;
+            border-radius: 2px;
+            overflow: hidden;
+            cursor: ew-resize;
+            touch-action: pan-y;
+            user-select: none;
+        }
+
+        .ba-after,
+        .ba-before {
+            position: absolute;
+            inset: 0;
+        }
+
+        .ba-after {
+            background: linear-gradient(150deg, #0d0d0d, #000);
+        }
+
+        .ba-before {
+            background: linear-gradient(150deg, #e6e0d2, #cfc7b3);
+            overflow: hidden;
+        }
+
+        .ba-before-inner {
+            position: absolute;
+            inset: 0;
+            width: var(--ba-width, 760px);
+        }
+
+        .ba-label {
+            position: absolute;
+            top: 16px;
+            font-family: var(--font-meta);
+            font-size: 11px;
+            letter-spacing: .14em;
+            padding: 6px 14px;
+            border-radius: 100px;
+        }
+
+        .ba-label.before {
+            right: 16px;
+            background: rgba(7, 7, 7, .55);
+            color: var(--pearl);
+            backdrop-filter: blur(10px);
+        }
+
+        .ba-label.after {
+            left: 16px;
+            background: rgba(255, 255, 255, .7);
+            color: var(--black-deep);
+            backdrop-filter: blur(10px);
+        }
+
+        .ba-handle {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--pearl);
+            right: 50%;
+            transform: translateX(50%);
+            box-shadow: 0 0 0 1px rgba(0, 0, 0, .2);
+        }
+
+        .ba-handle::after {
+            content: '⇔';
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            transform: translate(50%, -50%);
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: var(--pearl);
+            color: var(--black-deep);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+        }
+
+        /* ============ SERVICES (editorial list) ============ */
+        .services {
+            background: var(--pearl);
+        }
+
+        .svc-head h2 {
+            font-family: var(--font-display);
+            font-weight: 500;
+            font-size: clamp(32px, 5.6vw, 58px);
+            max-width: 640px;
+            margin-bottom: 50px;
+        }
+
+        .svc-item {
+            border-top: 1px solid rgba(7, 7, 7, .14);
+            padding: 30px 0;
+            display: grid;
+            grid-template-columns: 56px 1fr;
+            gap: 18px;
+            align-items: start;
+            position: relative;
+            overflow: hidden;
+            transition: padding .4s var(--ease);
+        }
+
+        .svc-item:last-child {
+            border-bottom: 1px solid rgba(7, 7, 7, .14);
+        }
+
+        .svc-num {
+            font-family: var(--font-meta);
+            font-size: 14px;
+            color: var(--grey);
+            padding-top: 6px;
+        }
+
+        .svc-main h3 {
+            font-family: var(--font-display);
+            font-size: clamp(21px, 3vw, 28px);
+            font-weight: 500;
+        }
+
+        .svc-main p {
+            margin-top: 8px;
+            color: #4a4a47;
+            font-size: 14.5px;
+            font-weight: 300;
+            max-width: 520px;
+        }
+
+        .svc-media {
+            height: 0;
+            overflow: hidden;
+            border-radius: 2px;
+            margin-top: 0;
+            transition: height .5s var(--ease), margin-top .5s var(--ease);
+        }
+
+        .svc-item.active .svc-media {
+            height: 180px;
+            margin-top: 18px;
+        }
+
+        .svc-arrow {
+            position: absolute;
+            left: 0;
+            top: 34px;
+            font-size: 18px;
+            opacity: 0;
+            transform: translateX(-8px);
+            transition: opacity .3s, transform .3s;
+        }
+
+        .svc-item:hover .svc-arrow {
+            opacity: .6;
+            transform: translateX(0);
+        }
+
+        /* ============ NEEDS GRID ============ */
+        .needs {
+            background: var(--black-deep);
+            color: var(--pearl);
+        }
+
+        .needs-head h2 {
+            font-family: var(--font-display);
+            font-weight: 500;
+            font-size: clamp(30px, 5.4vw, 50px);
+            max-width: 600px;
+        }
+
+        .needs-grid {
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2px;
+            background: rgba(255, 255, 255, .1);
+        }
+
+        @media (min-width:640px) {
+            .needs-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .need-card {
+            background: var(--black-deep);
+            padding: 34px 26px;
+            position: relative;
+            overflow: hidden;
+            min-height: 220px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        .need-card .ph {
+            position: absolute;
+            inset: 0;
+            opacity: .5;
+            transition: opacity .5s;
+        }
+
+        .need-card:hover .ph {
+            opacity: .75;
+        }
+
+        .need-card span {
+            position: relative;
+            z-index: 2;
+            font-family: var(--font-display);
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .need-card::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(0deg, rgba(0, 0, 0, .75), transparent 60%);
+            z-index: 1;
+        }
+
+        /* ============ PROCESS ============ */
+        .process {
+            background: var(--pearl);
+        }
+
+        .proc-head h2 {
+            font-family: var(--font-display);
+            font-weight: 500;
+            font-size: clamp(32px, 5.6vw, 56px);
+            margin-bottom: 48px;
+            max-width: 600px;
+        }
+
+        .proc-layout {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 32px;
+        }
+
+        .proc-media {
+            aspect-ratio: 4/5;
+            border-radius: 2px;
+            position: relative;
+        }
+
+        .proc-progress {
+            height: 2px;
+            background: rgba(7, 7, 7, .12);
+            margin-top: 24px;
+            border-radius: 2px;
+            overflow: hidden;
+        }
+
+        .proc-progress-bar {
+            height: 100%;
+            width: 25%;
+            background: var(--black-deep);
+            transition: width .5s var(--ease);
+        }
+
+        .proc-steps {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .proc-step {
+            padding: 22px 0;
+            border-top: 1px solid rgba(7, 7, 7, .14);
+            cursor: pointer;
+            display: grid;
+            grid-template-columns: 64px 1fr;
+            gap: 16px;
+        }
+
+        .proc-step:last-child {
+            border-bottom: 1px solid rgba(7, 7, 7, .14);
+        }
+
+        .proc-step .pnum {
+            font-family: var(--font-display);
+            font-size: 26px;
+            color: rgba(7, 7, 7, .25);
+            transition: color .4s;
+        }
+
+        .proc-step.active .pnum {
+            color: var(--black-deep);
+        }
+
+        .proc-step h4 {
+            font-family: var(--font-display);
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .proc-step p {
+            font-size: 14px;
+            color: #4a4a47;
+            font-weight: 300;
+            margin-top: 6px;
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transition: max-height .4s var(--ease), opacity .4s var(--ease), margin-top .4s var(--ease);
+        }
+
+        .proc-step.active p {
+            max-height: 80px;
+            opacity: 1;
+        }
+
+        /* ============ ABOUT ============ */
+        .about {
+            background: var(--pearl);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 44px;
+            align-items: center;
+        }
+
+        .about-media {
+            aspect-ratio: 3/4;
+            border-radius: 2px;
+        }
+
+        .about-copy h2 {
+            font-family: var(--font-display);
+            font-weight: 500;
+            font-size: clamp(28px, 5vw, 44px);
+            line-height: 1.22;
+        }
+
+        .about-copy p {
+            margin-top: 20px;
+            font-size: 15.5px;
+            color: #3a3a38;
+            font-weight: 300;
+            line-height: 1.9;
+            max-width: 480px;
+        }
+
+        .about-copy p+p {
+            margin-top: 14px;
+        }
+
+        .about-sign {
+            margin-top: 30px;
+            font-family: var(--font-display);
+            font-size: 19px;
+        }
+
+        .about-sign small {
+            display: block;
+            font-family: var(--font-meta);
+            font-size: 12px;
+            color: var(--grey);
+            margin-top: 4px;
+            letter-spacing: .05em;
+        }
+
+        /* ============ LOCATION ============ */
+        .location {
+            background: var(--black-deep);
+            color: var(--pearl);
+            overflow: hidden;
+        }
+
+        .loc-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .loc-copy h2 {
+            font-family: var(--font-display);
+            font-weight: 500;
+            font-size: clamp(30px, 5.6vw, 54px);
+        }
+
+        .loc-addr {
+            margin-top: 24px;
+            font-size: 17px;
+            font-weight: 400;
+        }
+
+        .loc-addr div {
+            padding: 10px 0;
+            border-top: 1px solid rgba(255, 255, 255, .12);
+        }
+
+        .loc-addr div:last-child {
+            border-bottom: 1px solid rgba(255, 255, 255, .12);
+        }
+
+        .loc-map {
+            aspect-ratio: 4/3;
+            border-radius: 2px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .loc-map iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            filter: grayscale(1) invert(0.92) contrast(0.9);
+        }
+
+        /* ============ TESTIMONIALS ============ */
+        .testi {
+            background: var(--pearl);
+        }
+
+        .testi-head h2 {
+            font-family: var(--font-display);
+            font-weight: 500;
+            font-size: clamp(30px, 5.4vw, 50px);
+            margin-bottom: 44px;
+        }
+
+        .testi-track {
+            display: flex;
+            gap: 26px;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            padding-bottom: 10px;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .testi-track::-webkit-scrollbar {
+            display: none;
+        }
+
+        .testi-card {
+            flex: 0 0 min(86vw, 420px);
+            scroll-snap-align: start;
+            padding: 34px;
+            border-radius: 2px;
+            background: var(--white);
+            border: 1px solid rgba(7, 7, 7, .08);
+        }
+
+        .testi-stars {
+            letter-spacing: 2px;
+            font-size: 13px;
+            color: var(--black-deep);
+            margin-bottom: 18px;
+        }
+
+        .testi-quote {
+            font-family: var(--font-display);
+            font-size: 19px;
+            font-weight: 400;
+            line-height: 1.6;
+        }
+
+        .testi-meta {
+            margin-top: 22px;
+            font-size: 13.5px;
+            color: var(--grey);
+        }
+
+        .testi-meta strong {
+            color: var(--black-deep);
+            font-weight: 500;
+        }
+
+        /* ============ FAQ ============ */
+        .faq {
+            background: var(--pearl);
+        }
+
+        .faq-head h2 {
+            font-family: var(--font-display);
+            font-weight: 500;
+            font-size: clamp(30px, 5.4vw, 50px);
+            margin-bottom: 44px;
+            max-width: 600px;
+        }
+
+        .faq-item {
+            border-top: 1px solid rgba(7, 7, 7, .14);
+        }
+
+        .faq-item:last-child {
+            border-bottom: 1px solid rgba(7, 7, 7, .14);
+        }
+
+        .faq-q {
+            width: 100%;
+            text-align: right;
+            padding: 22px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 16px;
+            font-weight: 500;
+            gap: 20px;
+        }
+
+        .faq-q .plus {
+            font-size: 20px;
+            font-weight: 300;
+            transition: transform .35s var(--ease);
+            flex-shrink: 0;
+        }
+
+        .faq-item.open .faq-q .plus {
+            transform: rotate(135deg);
+        }
+
+        .faq-a {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height .45s var(--ease);
+        }
+
+        .faq-a p {
+            padding: 0 0 24px;
+            font-size: 14.5px;
+            color: #4a4a47;
+            font-weight: 300;
+            max-width: 640px;
+            line-height: 1.8;
+        }
+
+        /* ============ FINAL CTA ============ */
+        .final-cta {
+            background: var(--black-deep);
+            color: var(--pearl);
+            text-align: center;
+        }
+
+        .final-cta h2 {
+            font-family: var(--font-display);
+            font-weight: 500;
+            font-size: clamp(34px, 7vw, 72px);
+            line-height: 1.1;
+        }
+
+        .final-cta p {
+            margin-top: 20px;
+            color: rgba(244, 241, 235, .7);
+            font-size: 16px;
+            font-weight: 300;
+            max-width: 480px;
+            margin-inline: auto;
+        }
+
+        .final-ctas {
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+            margin-top: 38px;
+            flex-wrap: wrap;
+        }
+
+        /* ============ CONTACT ============ */
+        .contact {
+            background: var(--pearl);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .contact-item {
+            padding: 30px;
+            border-radius: 2px;
+            background: var(--white);
+            border: 1px solid rgba(7, 7, 7, .08);
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            transition: transform .35s var(--ease), box-shadow .35s var(--ease);
+        }
+
+        .contact-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 40px rgba(7, 7, 7, .06);
+        }
+
+        .contact-item .ci-label {
+            font-family: var(--font-meta);
+            font-size: 11px;
+            letter-spacing: .1em;
+            color: var(--grey);
+        }
+
+        .contact-item .ci-value {
+            font-family: var(--font-display);
+            font-size: 19px;
+            font-weight: 500;
+        }
+
+        .contact-item .ci-arrow {
+            margin-top: auto;
+            font-size: 14px;
+            opacity: .5;
+        }
+
+        /* ============ FOOTER ============ */
+        footer {
+            background: var(--black-deep);
+            color: rgba(244, 241, 235, .55);
+            padding: 44px var(--edge) 100px;
+            font-size: 13px;
+        }
+
+        .footer-grid {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 16px;
+            align-items: center;
+            border-top: 1px solid rgba(255, 255, 255, .1);
+            padding-top: 26px;
+        }
+
+        .footer-brand {
+            font-family: var(--font-display);
+            color: var(--pearl);
+            font-size: 15px;
+        }
+
+        /* ============ STICKY MOBILE CTA ============ */
+        .sticky-cta {
+            position: fixed;
+            bottom: 0;
+            inset-inline: 0;
+            z-index: 800;
+            padding: 12px var(--edge) calc(12px + env(safe-area-inset-bottom));
+            display: none;
+        }
+
+        .sticky-cta a {
+            display: block;
+            text-align: center;
+            padding: 16px;
+            border-radius: 100px;
+            background: rgba(7, 7, 7, 0.85);
+            color: var(--pearl);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, .14);
+            font-weight: 500;
+            font-size: 15px;
+        }
+
+        /* ============ FLOATING WHATSAPP BUTTON ============ */
+        .wa-float {
+            position: fixed;
+            bottom: 28px;
+            inset-inline-end: 28px;
+            z-index: 850;
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #25D366;
+            border: 1px solid rgba(255, 255, 255, .25);
+            box-shadow: 0 10px 30px rgba(37, 211, 102, .35);
+            opacity: 0;
+            transform: translateY(16px) scale(.9);
+            transition: transform .4s var(--ease), box-shadow .4s var(--ease), background .4s var(--ease);
+        }
+
+        .wa-float.shown {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+
+        .wa-float:hover {
+            background: #22c15e;
+            box-shadow: 0 14px 38px rgba(37, 211, 102, .45);
+            transform: translateY(-3px) scale(1.04);
+        }
+
+        .wa-float:active {
+            transform: translateY(-1px) scale(.98);
+        }
+
+        .wa-float svg {
+            width: 26px;
+            height: 26px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .wa-ring {
+            position: absolute;
+            inset: 0;
+            border-radius: 50%;
+            border: 1px solid rgba(37, 211, 102, .55);
+            animation: wa-pulse 2.6s ease-out infinite;
+        }
+
+        .wa-ring.delay {
+            animation-delay: 1.3s;
+        }
+
+        @keyframes wa-pulse {
+            0% {
+                transform: scale(1);
+                opacity: .55;
+            }
+
+            100% {
+                transform: scale(1.85);
+                opacity: 0;
+            }
+        }
+
+        .wa-tooltip {
+            position: absolute;
+            top: 50%;
+            inset-inline-end: calc(100% + 12px);
+            transform: translateY(-50%) translateX(6px);
+            background: var(--black-deep);
+            color: var(--pearl);
+            font-family: var(--font-meta);
+            font-size: 12.5px;
+            letter-spacing: .02em;
+            padding: 8px 14px;
+            border-radius: 100px;
+            white-space: nowrap;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity .3s var(--ease), transform .3s var(--ease);
+        }
+
+        .wa-float:hover .wa-tooltip {
+            opacity: 1;
+            transform: translateY(-50%) translateX(0);
+        }
+
+        @media (max-width:480px) {
+            .wa-float {
+                width: 52px;
+                height: 52px;
+                bottom: calc(94px + env(safe-area-inset-bottom));
+                inset-inline-end: 18px;
+            }
+
+            .wa-float svg {
+                width: 23px;
+                height: 23px;
+            }
+
+            .wa-tooltip {
+                display: none;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .wa-ring {
+                animation: none;
+                display: none;
+            }
+        }
+
+        /* ============ REVEAL UTILITY ============ */
+        .reveal {
+            opacity: 0;
+            transform: translateY(26px);
+        }
+
+        /* ============ RESPONSIVE ============ */
+        @media (min-width:640px) {
+            .intro-list {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .results-mosaic {
+                grid-template-columns: 1.4fr 1fr;
+            }
+
+            .r-main {
+                grid-row: 1/3;
+            }
+
+            .r-sub-row {
+                display: contents;
+            }
+
+            .r-sub {
+                aspect-ratio: auto;
+            }
+
+            .contact-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (min-width:860px) {
+            .nav-links {
+                display: flex;
+            }
+
+            .nav-burger {
+                display: none;
+            }
+
+            .hero-grid {
+                padding-inline-end: 14%;
+            }
+
+            .smp-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 70px;
+            }
+
+            .smp-copy {
+                order: 0;
+            }
+
+            .proc-layout {
+                grid-template-columns: 1fr 1fr;
+                gap: 70px;
+            }
+
+            .about-grid {
+                grid-template-columns: 0.8fr 1fr;
+                gap: 80px;
+            }
+
+            .loc-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 70px;
+            }
+
+            .contact-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width:859px) {
+            .nav-links {
+                display: none;
+            }
+
+            .nav-burger {
+                display: flex;
+            }
+
+            .hero h1 {
+                max-width: 100%;
+            }
+
+            .results-head h2,
+            .svc-head h2,
+            .needs-head h2,
+            .proc-head h2 {
+                font-size: clamp(30px, 8vw, 42px);
+            }
+        }
+
+        @media (max-width:480px) {
+            .sticky-cta {
+                display: block;
+            }
+
+            body {
+                padding-bottom: 0;
+            }
+        }
+
+        @media (min-width:481px) {
+            .sticky-cta {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ============ NAV ============ -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#" class="nav-brand">
+                <img src="logo.jpg" alt="Kenan.SMP.Syria" style="height: 36px; width: auto; display: block;">
+            </a>
+            <div class="nav-links">
+                <a href="#home">الرئيسية</a>
+                <a href="#smp">SMP</a>
+                <a href="#results">النتائج</a>
+                <a href="#services">الخدمات</a>
+                <a href="#about">عن العيادة</a>
+                <a href="#faq">الأسئلة الشائعة</a>
+                <a href="#contact">تواصل معنا</a>
+            </div>
+            <a href="#book" class="nav-cta">احجز استشارتك</a>
+            <button class="nav-burger" id="burgerBtn" aria-label="فتح القائمة"><span></span></button>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mm-top">
+            <span class="nav-brand">
+                <img src="logo.jpg" alt="Kenan.SMP.Syria" style="height: 36px; width: auto; display: block;">
+            </span>
+            <button class="mm-close" id="mmClose" aria-label="إغلاق القائمة">✕</button>
+        </div>
+        <div class="mm-links" id="mmLinks">
+            <a href="#home">الرئيسية</a>
+            <a href="#smp">SMP</a>
+            <a href="#results">النتائج</a>
+            <a href="#services">الخدمات</a>
+            <a href="#about">عن العيادة</a>
+            <a href="#faq">الأسئلة الشائعة</a>
+            <a href="#contact">تواصل معنا</a>
+        </div>
+        <a href="#book" class="mm-cta">احجز استشارتك</a>
+    </div>
+
+    <!-- ============ HERO ============ -->
+    <header class="hero" id="home">
+        <div class="hero-media">
+            <div class="ph">
+                <img class="img-fill" src="6.jpg" alt="خلفية البطل">
+                <span class="ph-mark">KENAN.SMP.SYRIA — LATTAKIA</span>
+            </div>
+        </div>
+        <div class="hero-grid">
+            <div class="hero-loc glass-dark" id="heroLoc"><span class="dot"></span>اللاذقية • سوريا</div>
+            <h1 id="heroHeadline">
+                <span class="line"><span>الدقة التي</span></span>
+                <span class="line"><span>تبدو طبيعية.</span></span>
+            </h1>
+            <p class="hero-sub" id="heroSub">تقنية المايكروبجمنتشن لفروة الرأس، بتصميم دقيق ينسجم مع ملامحك ومظهرك.</p>
+            <div class="hero-ctas" id="heroCtas">
+                <a href="#book" class="btn-primary">احجز استشارتك</a>
+                <a href="#results" class="btn-ghost">شاهد النتائج</a>
+            </div>
+        </div>
+        <div class="hero-scroll" id="heroScroll"></div>
+    </header>
+
+    <!-- ============ INTRO ============ -->
+    <section class="intro pad">
+        <div class="container intro-grid">
+            <div>
+                <p class="eyebrow-word reveal">النهج</p>
+                <h2 class="intro-statement reveal">الفرق يكمن في التفاصيل.</h2>
+                <div class="intro-body reveal">
+                    <p>كل جلسة تبدأ بفهم شكل رأسك، كثافة شعرك الطبيعية، وخط بشرتك — قبل أن نبدأ بأي تطبيق. النتيجة ليست
+                        نمطاً موحداً، بل تصميماً فردياً لكل حالة.</p>
+                    <p>الدقة هنا ليست شعاراً. هي طريقة عمل: توزيع نقاط الصبغة بعناية، اختيار الدرجة المناسبة للون بشرتك،
+                        ومراجعة النتيجة معك في كل خطوة.</p>
+                </div>
+                <div class="intro-list reveal">
+                    <div>تصميم فردي لكل حالة</div>
+                    <div>مظهر طبيعي غير ملحوظ</div>
+                    <div>دقة في اختيار الدرجة</div>
+                    <div>متابعة بعد الجلسة</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ WHAT IS SMP ============ -->
+    <section class="smp-explain pad" id="smp">
+        <div class="container smp-grid">
+            <div class="smp-media ph reveal"><img class="img-fill" src="5.jpg" alt="لقطة مقربة لتقنية SMP"
+                    loading="lazy"></div>
+            <div class="smp-copy">
+                <p class="eyebrow-word reveal" style="color:rgba(244,241,235,.5)">شرح التقنية</p>
+                <h2 class="reveal">ما هي تقنية المايكروبجمنتشن لفروة الرأس؟</h2>
+                <p class="reveal">المايكروبجمنتشن (SMP) هي تقنية دقيقة يتم من خلالها وضع نقاط صبغة صغيرة جداً على فروة
+                    الرأس، بحيث تحاكي مظهر بصيلات الشعر الطبيعية.</p>
+                <p class="reveal">في الحالات المناسبة، تُستخدم هذه التقنية لتحسين مظهر كثافة الشعر، أو لتعريف خط الشعر
+                    بشكل أكثر تناسقاً مع ملامح الوجه — دون أي تدخل جراحي.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ RESULTS ============ -->
+    <section class="results pad" id="results">
+        <div class="container">
+            <div class="results-head">
+                <h2 class="reveal">شاهد الفرق.</h2>
+                <p class="eyebrow-word reveal" style="max-width:280px;text-align:start;">نتائج حقيقية من جلسات SMP — كل
+                    حالة مصممة بشكل مستقل.</p>
+            </div>
+            <div class="results-mosaic reveal">
+                <div class="r-main ph"><img class="img-fill" src="6.jpg" alt="نتيجة SMP رئيسية" loading="lazy"></div>
+                <div class="r-wide ph"><img class="img-fill" src="three.jpg" alt="لقطة كاملة لنتيجة SMP" loading="lazy">
+                </div>
+            </div>
+
+            <div class="ba reveal" id="baSlider" tabindex="0" role="slider" aria-label="مقارنة قبل وبعد"
+                aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+                <div class="ba-after ph"><img class="img-fill" src="oneafter.jpg" alt="بعد جلسة SMP" loading="lazy">
+                </div>
+                <div class="ba-before">
+                    <div class="ba-before-inner ph" id="baBeforeInner"><img class="img-fill" src="one.jpg"
+                            alt="قبل جلسة SMP" loading="lazy"></div>
+                </div>
+                <span class="ba-label after">بعد</span>
+                <span class="ba-label before">قبل</span>
+                <div class="ba-handle" id="baHandle"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="services pad" id="services">
+        <div class="container">
+            <div class="svc-head">
+                <p class="eyebrow-word reveal">الخدمات</p>
+                <h2 class="reveal">تقنية واحدة، تُطبّق بدقة مختلفة لكل هدف.</h2>
+            </div>
+
+            <div class="svc-item reveal" data-svc>
+                <span class="svc-num">01</span>
+                <div class="svc-main">
+                    <h3>SMP — المايكروبجمنتشن</h3>
+                    <p>تعريف بصري لفروة الرأس بتقنية دقيقة، نقطة بنقطة، لمحاكاة مظهر بصيلات الشعر الطبيعية.</p>
+                    <div class="svc-media ph"></div>
+                </div>
+                <span class="svc-arrow">←</span>
+            </div>
+
+            <div class="svc-item reveal" data-svc>
+                <span class="svc-num">02</span>
+                <div class="svc-main">
+                    <h3>مظهر الكثافة</h3>
+                    <p>تحسين مظهر كثافة الشعر في الحالات المناسبة، من خلال توزيع دقيق للصبغة بين الشعر الموجود.</p>
+                    <div class="svc-media ph light"></div>
+                </div>
+                <span class="svc-arrow">←</span>
+            </div>
+
+            <div class="svc-item reveal" data-svc>
+                <span class="svc-num">03</span>
+                <div class="svc-main">
+                    <h3>تصميم خط الشعر</h3>
+                    <p>تصميم خط شعر متناسق مع ملامح الوجه، بما يحافظ على مظهر طبيعي غير ملحوظ.</p>
+                    <div class="svc-media ph"></div>
+                </div>
+                <span class="svc-arrow">←</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ NEEDS ============ -->
+    <section class="needs pad">
+        <div class="container">
+            <div class="needs-head">
+                <p class="eyebrow-word reveal" style="color:rgba(244,241,235,.5)">تُناسب مختلف الحالات</p>
+                <h2 class="reveal">تقنية SMP لكل هدف.</h2>
+            </div>
+            <div class="needs-grid reveal">
+                <div class="need-card">
+                    <div class="ph"><img class="img-fill" src="55.jpg" alt="تحديد خط الشعر" loading="lazy"></div>
+                    <span>تحديد خط الشعر</span>
+                </div>
+                <div class="need-card">
+                    <div class="ph"><img class="img-fill" src="fuller.jpg" alt="مظهر أكثر امتلاءً" loading="lazy"></div>
+                    <span>مظهر أكثر امتلاءً</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ PROCESS ============ -->
+    <section class="process pad">
+        <div class="container">
+            <div class="proc-head">
+                <p class="eyebrow-word reveal">كيف نعمل</p>
+                <h2 class="reveal">أربع خطوات، بإشراف دقيق في كل مرحلة.</h2>
+            </div>
+            <div class="proc-layout">
+                <div>
+                    <div class="proc-media ph reveal" id="procMedia"><img class="img-fill" src="process.jpg"
+                            alt="مرحلة الاستشارة"><span class="ph-mark" id="procMediaLabel">الاستشارة</span></div>
+                    <div class="proc-progress">
+                        <div class="proc-progress-bar" id="procBar"></div>
+                    </div>
+                </div>
+                <div class="proc-steps reveal" id="procSteps">
+                    <div class="proc-step active" data-step="0">
+                        <span class="pnum">01</span>
+                        <div>
+                            <h4>الاستشارة</h4>
+                            <p>فهم احتياجاتك وأهدافك وتقييم الحالة قبل البدء بأي خطوة.</p>
+                        </div>
+                    </div>
+                    <div class="proc-step" data-step="1">
+                        <span class="pnum">02</span>
+                        <div>
+                            <h4>التصميم</h4>
+                            <p>اختيار الشكل والتوزيع المناسبين بما ينسجم مع ملامحك.</p>
+                        </div>
+                    </div>
+                    <div class="proc-step" data-step="2">
+                        <span class="pnum">03</span>
+                        <div>
+                            <h4>التطبيق</h4>
+                            <p>تنفيذ التقنية بعناية ودقة، نقطة بنقطة.</p>
+                        </div>
+                    </div>
+                    <div class="proc-step" data-step="3">
+                        <span class="pnum">04</span>
+                        <div>
+                            <h4>المتابعة</h4>
+                            <p>تقييم النتيجة ومناقشة الخطوات اللاحقة عند الحاجة.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about pad" id="about">
+        <div class="container about-grid">
+            <div class="about-media ph reveal"><span class="ph-mark">[صورة المختص]</span></div>
+            <div class="about-copy">
+                <p class="eyebrow-word reveal">عن العيادة</p>
+                <h2 class="reveal">خلف كل نتيجة، هناك اهتمام بالتفاصيل.</h2>
+                <p class="reveal">كل حالة تُعامل بشكل مستقل — لا يوجد نموذج واحد يُطبَّق على الجميع. الهدف دائماً هو
+                    نتيجة تبدو وكأنها جزء طبيعي من مظهرك، لا إضافة عليه.</p>
+                <p class="reveal">هذا النهج مبني على الصبر في الاستماع لما تريده، والدقة في التنفيذ، والصدق في تحديد ما
+                    يمكن تحقيقه فعلاً.</p>
+                <div class="about-sign reveal">
+                    [اسم المختص]
+                    <small>[المؤهلات] · [سنوات الخبرة]</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ LOCATION ============ -->
+    <section class="location pad">
+        <div class="container loc-grid">
+            <div class="loc-copy">
+                <p class="eyebrow-word reveal" style="color:rgba(244,241,235,.5)">الموقع</p>
+                <h2 class="reveal">في قلب اللاذقية.</h2>
+                <div class="loc-addr reveal">
+                    <div>اللاذقية، سوريا</div>
+                    <div>الكورنيش الغربي</div>
+                </div>
+                <a href="https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D9%83%D9%88%D8%B1%D9%86%D9%8A%D8%B4%20%D8%A7%D9%84%D8%BA%D8%B1%D8%A8%D9%8A%20%D8%A7%D9%84%D9%84%D8%A7%D8%B0%D9%82%D9%8A%D8%A9"
+                    target="_blank" rel="noopener" class="btn-primary reveal"
+                    style="margin-top:30px;display:inline-block;">احصل على الاتجاهات</a>
+            </div>
+            <div class="loc-map reveal">
+                <iframe title="خريطة الموقع" loading="lazy"
+                    src="https://www.google.com/maps?q=%D8%A7%D9%84%D9%83%D9%88%D8%B1%D9%86%D9%8A%D8%B4%20%D8%A7%D9%84%D8%BA%D8%B1%D8%A8%D9%8A%20%D8%A7%D9%84%D9%84%D8%A7%D8%B0%D9%82%D9%8A%D8%A9&output=embed"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="testi pad">
+        <div class="container">
+            <div class="testi-head">
+                <p class="eyebrow-word reveal">آراء العملاء</p>
+                <h2 class="reveal">تجارب حقيقية.</h2>
+            </div>
+            <div class="testi-track reveal">
+                <div class="testi-card">
+                    <div class="testi-stars">★★★★★</div>
+                    <p class="testi-quote">[اقتباس تقييم العميل هنا]</p>
+                    <div class="testi-meta"><strong>[اسم العميل]</strong> — [نوع الجلسة]</div>
+                </div>
+                <div class="testi-card">
+                    <div class="testi-stars">★★★★★</div>
+                    <p class="testi-quote">[اقتباس تقييم العميل هنا]</p>
+                    <div class="testi-meta"><strong>[اسم العميل]</strong> — [نوع الجلسة]</div>
+                </div>
+                <div class="testi-card">
+                    <div class="testi-stars">★★★★★</div>
+                    <p class="testi-quote">[اقتباس تقييم العميل هنا]</p>
+                    <div class="testi-meta"><strong>[اسم العميل]</strong> — [نوع الجلسة]</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="faq pad" id="faq">
+        <div class="container">
+            <div class="faq-head">
+                <p class="eyebrow-word reveal">الأسئلة الشائعة</p>
+                <h2 class="reveal">كل ما تحتاج معرفته.</h2>
+            </div>
+            <div id="faqList" class="reveal">
+                <div class="faq-item">
+                    <button class="faq-q"><span>ما هي تقنية SMP؟</span><span class="plus">+</span></button>
+                    <div class="faq-a">
+                        <p>هي تقنية دقيقة لوضع نقاط صبغة صغيرة على فروة الرأس، تحاكي مظهر بصيلات الشعر الطبيعية.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q"><span>هل تناسب تقنية SMP الجميع؟</span><span class="plus">+</span></button>
+                    <div class="faq-a">
+                        <p>تُقيَّم كل حالة على حدة خلال الاستشارة لتحديد مدى ملاءمة التقنية لحالتك تحديداً.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q"><span>كم جلسة أحتاج؟</span><span class="plus">+</span></button>
+                    <div class="faq-a">
+                        <p>يختلف عدد الجلسات حسب الحالة، ويتم تحديده بدقة خلال الاستشارة الأولى.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q"><span>كم تستغرق الجلسة؟</span><span class="plus">+</span></button>
+                    <div class="faq-a">
+                        <p>تختلف مدة الجلسة حسب مساحة العمل وتفاصيل الحالة، وسيتم توضيح ذلك خلال الاستشارة.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q"><span>هل نتائج SMP طبيعية المظهر؟</span><span class="plus">+</span></button>
+                    <div class="faq-a">
+                        <p>الهدف من كل جلسة هو نتيجة تنسجم مع ملامحك ولون بشرتك، بحيث تبدو جزءاً طبيعياً من مظهرك.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q"><span>هل يمكن استخدام SMP لتحسين مظهر كثافة الشعر؟</span><span
+                            class="plus">+</span></button>
+                    <div class="faq-a">
+                        <p>نعم، في الحالات المناسبة تُستخدم التقنية لتحسين مظهر الكثافة بين الشعر الموجود.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q"><span>كيف تتم العناية بعد الجلسة؟</span><span class="plus">+</span></button>
+                    <div class="faq-a">
+                        <p>سيتم شرح تعليمات العناية بعد الجلسة بشكل مفصل، لضمان أفضل نتيجة ممكنة.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q"><span>هل يمكنني معرفة مدى ملاءمة التقنية لي قبل البدء؟</span><span
+                            class="plus">+</span></button>
+                    <div class="faq-a">
+                        <p>بالتأكيد. الاستشارة الأولى مخصصة تحديداً لتقييم حالتك ومناقشة النتيجة المتوقعة قبل أي التزام.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FINAL CTA ============ -->
+    <section class="final-cta pad" id="book">
+        <div class="container">
+            <h2 class="reveal">ابدأ بخطوة بسيطة.</h2>
+            <p class="reveal">احجز استشارتك وتحدث معنا حول النتيجة التي ترغب في الوصول إليها.</p>
+            <div class="final-ctas reveal">
+                <a href="#contact" class="btn-primary">احجز استشارتك</a>
+                <a href="https://wa.me/905352677267" target="_blank" rel="noopener" class="btn-ghost">تواصل عبر
+                    واتساب</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact pad" id="contact">
+        <div class="container">
+            <p class="eyebrow-word reveal">تواصل معنا</p>
+            <h2 class="reveal"
+                style="font-family:var(--font-display);font-weight:500;font-size:clamp(30px,5.4vw,50px);margin:12px 0 40px;">
+                نسعد بالإجابة على استفساراتك.</h2>
+            <div class="contact-grid reveal">
+                <a class="contact-item" href="https://wa.me/905352677267" target="_blank" rel="noopener">
+                    <span class="ci-label">واتساب</span>
+                    <span class="ci-value">+90 535 267 72 67</span>
+                    <span class="ci-arrow">←</span>
+                </a>
+                <a class="contact-item" href="tel:+905352677267">
+                    <span class="ci-label">اتصل بنا</span>
+                    <span class="ci-value">+90 535 267 72 67</span>
+                    <span class="ci-arrow">←</span>
+                </a>
+                <a class="contact-item" href="mailto:kenanhamadokh@gmail.com">
+                    <span class="ci-label">البريد الإلكتروني</span>
+                    <span class="ci-value"
+                        style="direction:ltr;text-align:right;font-size:16px;">kenanhamadokh@gmail.com</span>
+                    <span class="ci-arrow">←</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer>
+        <div class="footer-grid">
+            <span class="footer-brand">
+                <img src="logo.jpg" alt="Kenan.SMP.Syria" style="height: 24px; width: auto; display: inline-block;">
+            </span>
+            <span>اللاذقية، سوريا — الكورنيش الغربي</span>
+            <span>@kenanhamadokh</span>
+        </div>
+    </footer>
+
+    <!-- ============ STICKY MOBILE CTA ============ -->
+    <div class="sticky-cta">
+        <a href="#book">احجز استشارتك</a>
+    </div>
+
+    <!-- ============ FLOATING WHATSAPP BUTTON ============ -->
+    <a href="https://wa.me/905352677267" target="_blank" rel="noopener" class="wa-float" id="waFloat"
+        aria-label="تواصل معنا عبر واتساب">
+        <span class="wa-ring"></span>
+        <span class="wa-ring delay"></span>
+        <span class="wa-tooltip">تواصل عبر واتساب</span>
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"
+                fill="#FFFFFF" />
+            <path
+                d="M12.012 2.001c-5.514 0-9.988 4.474-9.988 9.988 0 1.762.462 3.484 1.34 5.001L2 22l5.144-1.341a9.96 9.96 0 0 0 4.868 1.24h.004c5.514 0 9.988-4.474 9.988-9.989 0-2.669-1.037-5.176-2.924-7.063a9.929 9.929 0 0 0-7.068-2.926zm5.865 15.85a8.28 8.28 0 0 1-5.865 2.428h-.003a8.28 8.28 0 0 1-4.223-1.155l-.303-.18-3.052.796.815-2.975-.198-.306a8.264 8.264 0 0 1-1.268-4.402c0-4.575 3.723-8.297 8.301-8.297a8.24 8.24 0 0 1 5.87 2.432 8.234 8.234 0 0 1 2.428 5.867 8.28 8.28 0 0 1-2.502 5.792z"
+                fill="#FFFFFF" />
+        </svg>
+    </a>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+        const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        /* ---------- NAV SCROLL STATE ---------- */
+        const nav = document.getElementById('nav');
+        ScrollTrigger.create({
+            start: 60, end: 99999,
+            onUpdate: self => nav.classList.toggle('scrolled', self.scroll() > 60)
+        });
+
+        /* ---------- MOBILE MENU ---------- */
+        const burgerBtn = document.getElementById('burgerBtn');
+        const mmClose = document.getElementById('mmClose');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mmLinks = document.querySelectorAll('#mmLinks a');
+        function openMenu() {
+            mobileMenu.classList.add('open');
+            document.body.style.overflow = 'hidden';
+            document.getElementById('waFloat').style.opacity = '0';
+            document.getElementById('waFloat').style.pointerEvents = 'none';
+            gsap.fromTo(mmLinks, { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: .5, stagger: .06, delay: .15, ease: 'power3.out' });
+        }
+        function closeMenu() {
+            mobileMenu.classList.remove('open');
+            document.body.style.overflow = '';
+            document.getElementById('waFloat').style.opacity = '';
+            document.getElementById('waFloat').style.pointerEvents = '';
+            gsap.set(mmLinks, { opacity: 0, y: 16 });
+        }
+        burgerBtn.addEventListener('click', openMenu);
+        mmClose.addEventListener('click', closeMenu);
+        mmLinks.forEach(l => l.addEventListener('click', closeMenu));
+
+        /* ---------- HERO ENTRANCE ---------- */
+        window.addEventListener('DOMContentLoaded', () => {
+            const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
+            tl.to('.hero-loc', { opacity: 1, duration: .6 }, 0.15)
+                .to('.hero h1 .line span', { y: '0%', duration: .9, stagger: .12, ease: 'power4.out' }, 0.3)
+                .to('.hero-sub', { opacity: 1, y: 0, duration: .7 }, 0.85)
+                .to('.hero-ctas', { opacity: 1, y: 0, duration: .7 }, 1.0)
+                .to('.hero-scroll', { opacity: 1, duration: .7 }, 1.2);
+
+            const waFloat = document.getElementById('waFloat');
+            setTimeout(() => waFloat.classList.add('shown'), 1900);
+        });
+
+        /* ---------- SCROLL REVEALS ---------- */
+        document.querySelectorAll('.reveal').forEach(el => {
+            gsap.to(el, {
+                opacity: 1, y: 0, duration: 1, ease: 'power3.out',
+                scrollTrigger: { trigger: el, start: 'top 88%' }
+            });
+        });
+
+        /* ---------- SERVICES ACCORDION ---------- */
+        document.querySelectorAll('[data-svc]').forEach(item => {
+            item.addEventListener('click', () => {
+                const wasActive = item.classList.contains('active');
+                document.querySelectorAll('[data-svc]').forEach(i => i.classList.remove('active'));
+                if (!wasActive) item.classList.add('active');
+            });
+        });
+
+        /* ---------- PROCESS STEPPER ---------- */
+        const procSteps = document.querySelectorAll('.proc-step');
+        const procBar = document.getElementById('procBar');
+        const procMediaLabel = document.getElementById('procMediaLabel');
+        const stepLabels = ['الاستشارة', 'التصميم', 'التطبيق', 'المتابعة'];
+        procSteps.forEach(step => {
+            step.addEventListener('click', () => {
+                const idx = parseInt(step.dataset.step);
+                procSteps.forEach(s => s.classList.remove('active'));
+                step.classList.add('active');
+                gsap.to(procBar, { width: ((idx + 1) / 4 * 100) + '%', duration: .5, ease: 'power2.out' });
+                procMediaLabel.textContent = stepLabels[idx];
+            });
+        });
+
+        /* ---------- BEFORE / AFTER SLIDER ---------- */
+        const ba = document.getElementById('baSlider');
+        const baHandle = document.getElementById('baHandle');
+        const baBeforeInner = document.getElementById('baBeforeInner');
+        let baDragging = false;
+
+        function setBaPosition(pct) {
+            pct = Math.max(0, Math.min(100, pct));
+            baHandle.style.right = pct + '%';
+            baHandle.style.transform = 'translateX(50%)';
+            ba.querySelector('.ba-before').style.clipPath = `inset(0 0 0 ${100 - pct}%)`;
+            baBeforeInner.style.width = ba.offsetWidth + 'px';
+            ba.setAttribute('aria-valuenow', Math.round(pct));
+        }
+        setBaPosition(50);
+
+        function baPointerMove(clientX) {
+            const rect = ba.getBoundingClientRect();
+            let pct = ((clientX - rect.left) / rect.width) * 100;
+            setBaPosition(pct);
+        }
+        ba.addEventListener('mousedown', e => { baDragging = true; baPointerMove(e.clientX); });
+        window.addEventListener('mousemove', e => { if (baDragging) baPointerMove(e.clientX); });
+        window.addEventListener('mouseup', () => baDragging = false);
+        ba.addEventListener('touchstart', e => { baDragging = true; baPointerMove(e.touches[0].clientX); }, { passive: true });
+        ba.addEventListener('touchmove', e => { if (baDragging) { baPointerMove(e.touches[0].clientX); } }, { passive: true });
+        ba.addEventListener('touchend', () => baDragging = false);
+        ba.addEventListener('keydown', e => {
+            const rect = ba.getBoundingClientRect();
+            const current = parseFloat(ba.getAttribute('aria-valuenow')) || 50;
+            if (e.key === 'ArrowLeft') { setBaPosition(current + 4); e.preventDefault(); }
+            if (e.key === 'ArrowRight') { setBaPosition(current - 4); e.preventDefault(); }
+        });
+        window.addEventListener('resize', () => setBaPosition(parseFloat(ba.getAttribute('aria-valuenow')) || 50));
+
+        /* ---------- FAQ ACCORDION ---------- */
+        document.querySelectorAll('.faq-item').forEach(item => {
+            const q = item.querySelector('.faq-q');
+            const a = item.querySelector('.faq-a');
+            q.addEventListener('click', () => {
+                const isOpen = item.classList.contains('open');
+                document.querySelectorAll('.faq-item').forEach(i => {
+                    i.classList.remove('open');
+                    i.querySelector('.faq-a').style.maxHeight = null;
+                });
+                if (!isOpen) {
+                    item.classList.add('open');
+                    a.style.maxHeight = a.scrollHeight + 'px';
+                }
+            });
+        });
+
+        /* ---------- NEED CARD HOVER PARALLAX (subtle) ---------- */
+        document.querySelectorAll('.need-card').forEach(card => {
+            if (reduceMotion) return;
+        });
+    </script>
+</body>
+
+</html>
