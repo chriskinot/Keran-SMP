@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Kenan.SMP.Syria | تقنية المايكروبجمنتشن لفروة الرأس — اللاذقية</title>
     <meta name="description"
-        content="Kenan.SMP.Syria — عيادة متخصصة في تقنية المايكروبجمنتشن لفروة الرأس (SMP) في اللاذقية، سوريا. دقة، تصميم فردي، ونتيجة تبدو طبيعية.">
+        content="Kenan.SMP.Syria — عيادة متخصصة في تقنية المايكروبجمنتشن لفروة الرأس (SMP) في اللاذقية، سوريا. تحسين مظهر كثافة الشعر، تصميم خط الشعر، وإخفاء مظهر الصلع بشكل طبيعي ومتناسق مع شكل الوجه.">
     <meta name="keywords"
-        content="SMP اللاذقية, مايكروبجمنتشن اللاذقية, SMP سوريا, مايكروبجمنتشن فروة الرأس سوريا, تقنية SMP">
+        content="SMP اللاذقية, مايكروبجمنتشن اللاذقية, SMP سوريا, مايكروبجمنتشن فروة الرأس سوريا, تقنية SMP, كنان حمادوخ">
     <meta property="og:title" content="Kenan.SMP.Syria — الدقة التي تبدو طبيعية">
-    <meta property="og:description" content="تقنية المايكروبجمنتشن لفروة الرأس في اللاذقية، سوريا.">
+    <meta property="og:description"
+        content="تقنية المايكروبجمنتشن لفروة الرأس في اللاذقية، سوريا. تصميم فردي لكل حالة، ونتيجة طبيعية تنسجم مع ملامحك.">
     <meta property="og:type" content="business.business">
     <meta property="og:locale" content="ar_AR">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,25 +19,32 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&family=Jost:wght@300;400;500&display=swap"
         rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js">
+    </script>
     <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "MedicalBusiness",
-  "name": "Kenan.SMP.Syria",
-  "image": "",
-  "telephone": "0998714043",
-  "email": "kenanhamadokh@gmail.com",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "الكورنيش الغربي",
-    "addressLocality": "اللاذقية",
-    "addressCountry": "SY"
-  },
-  "sameAs": ["https://instagram.com/kenanhamadokh"]
-}
-</script>
+        {
+            "@context": "https://schema.org",
+            "@type": "MedicalBusiness",
+            "name": "Kenan.SMP.Syria",
+            "image": "logo.jpg",
+            "telephone": "0998714043",
+            "email": "kenanhamadokh@gmail.com",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "الكورنيش الغربي — Vida Center & Salon",
+                "addressLocality": "اللاذقية",
+                "addressCountry": "SY"
+            },
+            "sameAs": ["https://instagram.com/kenanhamadokh"],
+            "openingHours": "By appointment",
+            "founder": {
+                "@type": "Person",
+                "name": "كنان حمادوخ"
+            }
+        }
+    </script>
     <style>
         /* ============ TOKENS ============ */
         :root {
@@ -112,7 +120,6 @@
             }
         }
 
-        /* focus states */
         a:focus-visible,
         button:focus-visible,
         input:focus-visible,
@@ -327,11 +334,13 @@
             transform: translateY(-100%);
             transition: transform .55s var(--ease);
             visibility: hidden;
+            aria-hidden: true;
         }
 
         .mobile-menu.open {
             transform: translateY(0);
             visibility: visible;
+            aria-hidden: false;
         }
 
         .mm-top {
@@ -467,11 +476,12 @@
         .hero-sub {
             font-size: clamp(15px, 2vw, 19px);
             color: rgba(244, 241, 235, .78);
-            max-width: 460px;
+            max-width: 520px;
             margin-top: 26px;
             font-weight: 300;
             opacity: 0;
             transform: translateY(14px);
+            line-height: 1.8;
         }
 
         .hero-ctas {
@@ -610,7 +620,7 @@
             gap: 26px 30px;
             border-top: 1px solid rgba(7, 7, 7, .12);
             padding-top: 30px;
-            max-width: 640px;
+            max-width: 700px;
         }
 
         .intro-list div {
@@ -667,6 +677,36 @@
 
         .smp-copy p+p {
             margin-top: 14px;
+        }
+
+        /* Why Kenan list */
+        .why-grid {
+            margin-top: 44px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px 32px;
+            border-top: 1px solid rgba(244, 241, 235, .2);
+            padding-top: 28px;
+            max-width: 620px;
+        }
+
+        .why-grid div {
+            font-size: 14.5px;
+            font-weight: 400;
+            color: rgba(244, 241, 235, .85);
+            position: relative;
+            padding-inline-start: 18px;
+            line-height: 1.6;
+        }
+
+        .why-grid div::before {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 8px;
+            width: 6px;
+            height: 1px;
+            background: var(--pearl);
         }
 
         /* ============ RESULTS ============ */
@@ -812,7 +852,7 @@
             font-family: var(--font-display);
             font-weight: 500;
             font-size: clamp(32px, 5.6vw, 58px);
-            max-width: 640px;
+            max-width: 680px;
             margin-bottom: 50px;
         }
 
@@ -826,6 +866,7 @@
             position: relative;
             overflow: hidden;
             transition: padding .4s var(--ease);
+            cursor: pointer;
         }
 
         .svc-item:last-child {
@@ -850,7 +891,7 @@
             color: #4a4a47;
             font-size: 14.5px;
             font-weight: 300;
-            max-width: 520px;
+            max-width: 540px;
         }
 
         .svc-media {
@@ -862,7 +903,7 @@
         }
 
         .svc-item.active .svc-media {
-            height: 180px;
+            height: 160px;
             margin-top: 18px;
         }
 
@@ -1067,7 +1108,7 @@
             color: #3a3a38;
             font-weight: 300;
             line-height: 1.9;
-            max-width: 480px;
+            max-width: 520px;
         }
 
         .about-copy p+p {
@@ -1252,7 +1293,7 @@
             font-size: 14.5px;
             color: #4a4a47;
             font-weight: 300;
-            max-width: 640px;
+            max-width: 680px;
             line-height: 1.8;
         }
 
@@ -1615,14 +1656,14 @@
     <nav class="nav" id="nav">
         <div class="nav-inner">
             <a href="#" class="nav-brand">
-                <img src="logo.jpg" alt="Kenan.SMP.Syria" style="height: 36px; width: auto; display: block;">
+                <img src="logo.jpg" alt="Kenan.SMP.Syria" style="height:36px;width:auto;display:block;">
             </a>
             <div class="nav-links">
                 <a href="#home">الرئيسية</a>
                 <a href="#smp">SMP</a>
                 <a href="#results">النتائج</a>
                 <a href="#services">الخدمات</a>
-                <a href="#about">عن العيادة</a>
+                <a href="#about">عن الأخصائي</a>
                 <a href="#faq">الأسئلة الشائعة</a>
                 <a href="#contact">تواصل معنا</a>
             </div>
@@ -1631,10 +1672,10 @@
         </div>
     </nav>
 
-    <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
         <div class="mm-top">
             <span class="nav-brand">
-                <img src="logo.jpg" alt="Kenan.SMP.Syria" style="height: 36px; width: auto; display: block;">
+                <img src="logo.jpg" alt="Kenan.SMP.Syria" style="height:36px;width:auto;display:block;">
             </span>
             <button class="mm-close" id="mmClose" aria-label="إغلاق القائمة">✕</button>
         </div>
@@ -1643,7 +1684,7 @@
             <a href="#smp">SMP</a>
             <a href="#results">النتائج</a>
             <a href="#services">الخدمات</a>
-            <a href="#about">عن العيادة</a>
+            <a href="#about">عن الأخصائي</a>
             <a href="#faq">الأسئلة الشائعة</a>
             <a href="#contact">تواصل معنا</a>
         </div>
@@ -1659,12 +1700,16 @@
             </div>
         </div>
         <div class="hero-grid">
-            <div class="hero-loc glass-dark" id="heroLoc"><span class="dot"></span>اللاذقية • سوريا</div>
+            <div class="hero-loc glass-dark" id="heroLoc"><span class="dot"></span>اللاذقية • سوريا — Vida Center &amp;
+                Salon</div>
             <h1 id="heroHeadline">
                 <span class="line"><span>الدقة التي</span></span>
                 <span class="line"><span>تبدو طبيعية.</span></span>
             </h1>
-            <p class="hero-sub" id="heroSub">تقنية المايكروبجمنتشن لفروة الرأس، بتصميم دقيق ينسجم مع ملامحك ومظهرك.</p>
+            <p class="hero-sub" id="heroSub">أخصائي في تقنية SMP — Scalp Micropigmentation في اللاذقية، سوريا، لتحسين
+                مظهر كثافة الشعر، تصميم خط الشعر، وإخفاء مظهر الصلع بشكل طبيعي ومتناسق مع شكل الوجه. تبدأ استشارتك
+                بتقييم
+                الحالة وتصميم مناسب لنتيجة طبيعية.</p>
             <div class="hero-ctas" id="heroCtas">
                 <a href="#book" class="btn-primary">احجز استشارتك</a>
                 <a href="#results" class="btn-ghost">شاهد النتائج</a>
@@ -1701,12 +1746,21 @@
             <div class="smp-media ph reveal"><img class="img-fill" src="5.jpg" alt="لقطة مقربة لتقنية SMP"
                     loading="lazy"></div>
             <div class="smp-copy">
-                <p class="eyebrow-word reveal" style="color:rgba(244,241,235,.5)">شرح التقنية</p>
-                <h2 class="reveal">ما هي تقنية المايكروبجمنتشن لفروة الرأس؟</h2>
-                <p class="reveal">المايكروبجمنتشن (SMP) هي تقنية دقيقة يتم من خلالها وضع نقاط صبغة صغيرة جداً على فروة
-                    الرأس، بحيث تحاكي مظهر بصيلات الشعر الطبيعية.</p>
-                <p class="reveal">في الحالات المناسبة، تُستخدم هذه التقنية لتحسين مظهر كثافة الشعر، أو لتعريف خط الشعر
-                    بشكل أكثر تناسقاً مع ملامح الوجه — دون أي تدخل جراحي.</p>
+                <p class="eyebrow-word reveal" style="color:rgba(244,241,235,.5)">SMP في اللاذقية</p>
+                <h2 class="reveal">تقنية المايكروبجمنتشن لفروة الرأس</h2>
+                <p class="reveal">إذا كنت تبحث عن SMP في اللاذقية، فإن تقنية المايكروبجمنتشن لفروة الرأس تساعد على تحسين
+                    المظهر البصري لفروة الرأس من خلال إنشاء نقاط دقيقة تحاكي مظهر بصيلات الشعر.</p>
+                <p class="reveal">تُستخدم التقنية لتحسين مظهر كثافة الشعر، ولتصميم خط شعر مناسب، ولتقليل التباين بين
+                    فروة
+                    الرأس والشعر في حالات الصلع أو الشعر الخفيف.</p>
+                <div class="why-grid reveal">
+                    <div>تصميم مخصص لكل حالة</div>
+                    <div>الاهتمام بتناسق خط الشعر مع شكل الوجه</div>
+                    <div>اختيار درجة اللون بما يناسب الحالة</div>
+                    <div>العمل على مراحل للوصول لنتيجة متجانسة</div>
+                    <div>استشارة قبل بدء الجلسات</div>
+                    <div>متابعة الحالة بعد الجلسات</div>
+                </div>
             </div>
         </div>
     </section>
@@ -1726,7 +1780,7 @@
             </div>
 
             <div class="ba reveal" id="baSlider" tabindex="0" role="slider" aria-label="مقارنة قبل وبعد"
-                aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+                aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-valuetext="قبل 50% بعد 50%">
                 <div class="ba-after ph"><img class="img-fill" src="oneafter.jpg" alt="بعد جلسة SMP" loading="lazy">
                 </div>
                 <div class="ba-before">
@@ -1751,8 +1805,8 @@
             <div class="svc-item reveal" data-svc>
                 <span class="svc-num">01</span>
                 <div class="svc-main">
-                    <h3>SMP — المايكروبجمنتشن</h3>
-                    <p>تعريف بصري لفروة الرأس بتقنية دقيقة، نقطة بنقطة، لمحاكاة مظهر بصيلات الشعر الطبيعية.</p>
+                    <h3>SMP للصلع</h3>
+                    <p>تقنية المايكروبجمنتشن لتحسين المظهر البصري للصلع وإعطاء فروة الرأس مظهراً أكثر تجانساً.</p>
                     <div class="svc-media ph"></div>
                 </div>
                 <span class="svc-arrow">←</span>
@@ -1761,8 +1815,8 @@
             <div class="svc-item reveal" data-svc>
                 <span class="svc-num">02</span>
                 <div class="svc-main">
-                    <h3>مظهر الكثافة</h3>
-                    <p>تحسين مظهر كثافة الشعر في الحالات المناسبة، من خلال توزيع دقيق للصبغة بين الشعر الموجود.</p>
+                    <h3>SMP لتحسين مظهر كثافة الشعر</h3>
+                    <p>مناسبة لحالات الشعر الخفيف، بهدف تقليل ظهور فروة الرأس وتحسين المظهر العام للكثافة.</p>
                     <div class="svc-media ph light"></div>
                 </div>
                 <span class="svc-arrow">←</span>
@@ -1772,11 +1826,37 @@
                 <span class="svc-num">03</span>
                 <div class="svc-main">
                     <h3>تصميم خط الشعر</h3>
-                    <p>تصميم خط شعر متناسق مع ملامح الوجه، بما يحافظ على مظهر طبيعي غير ملحوظ.</p>
+                    <p>تصميم خط شعر يتناسب مع شكل الوجه والعمر والمظهر المطلوب، مع الحفاظ على مظهر طبيعي غير ملحوظ.</p>
                     <div class="svc-media ph"></div>
                 </div>
                 <span class="svc-arrow">←</span>
             </div>
+
+            <div class="svc-item reveal" data-svc>
+                <span class="svc-num">04</span>
+                <div class="svc-main">
+                    <h3>SMP للشعر الخفيف</h3>
+                    <p>تحسين المظهر البصري للشعر الخفيف من خلال توزيع نقاط دقيقة ومتناسقة على فروة الرأس.</p>
+                    <div class="svc-media ph light"></div>
+                </div>
+                <span class="svc-arrow">←</span>
+            </div>
+
+            <div class="svc-item reveal" data-svc>
+                <span class="svc-num">05</span>
+                <div class="svc-main">
+                    <h3>SMP للندوب</h3>
+                    <p>يمكن استخدام تقنية SMP في بعض الحالات لتحسين مظهر ندوب فروة الرأس، بعد تقييم الحالة وإمكانية
+                        تطبيق
+                        التقنية عليها.</p>
+                    <div class="svc-media ph"></div>
+                </div>
+                <span class="svc-arrow">←</span>
+            </div>
+
+            <p class="reveal" style="margin-top:28px;font-size:14px;color:#4a4a47;font-weight:300;">يتم تحديد عدد
+                الجلسات
+                والتصميم المناسب بعد تقييم كل حالة على حدة.</p>
         </div>
     </section>
 
@@ -1853,18 +1933,21 @@
     <section class="about pad" id="about">
         <div class="container about-grid">
             <div class="about-media ph reveal">
-                <img class="img-fill" src="owner.jpeg" alt="Kenan — المختص" loading="lazy">
+                <img class="img-fill" src="owner5.jpeg" alt="كنان حمادوخ — أخصائي SMP" loading="lazy">
             </div>
             <div class="about-copy">
-                <p class="eyebrow-word reveal">عن العيادة</p>
-                <h2 class="reveal">خلف كل نتيجة، هناك اهتمام بالتفاصيل.</h2>
-                <p class="reveal">كل حالة تُعامل بشكل مستقل — لا يوجد نموذج واحد يُطبَّق على الجميع. الهدف دائماً هو
-                    نتيجة تبدو وكأنها جزء طبيعي من مظهرك، لا إضافة عليه.</p>
-                <p class="reveal">هذا النهج مبني على الصبر في الاستماع لما تريده، والدقة في التنفيذ، والصدق في تحديد ما
-                    يمكن تحقيقه فعلاً.</p>
+                <p class="eyebrow-word reveal">عن الأخصائي</p>
+                <h2 class="reveal">أنا كنان حمادوخ — أخصائي في تقنية SMP</h2>
+                <p class="reveal">أختص في تقنية SMP — Scalp Micropigmentation، وأقدم خدمات المايكروبجمنتشن لفروة الرأس
+                    في اللاذقية، سوريا.</p>
+                <p class="reveal">أركّز في عملي على تصميم مظهر طبيعي متناسق مع شكل الوجه ولون البشرة، سواء لتحسين مظهر
+                    كثافة الشعر، أو تحديد خط الشعر، أو تقليل مظهر الصلع. كل حالة تُقيَّم بشكل منفصل قبل البدء، حيث يجب
+                    أن
+                    يكون تصميم خط الشعر وتوزيع النقاط ودرجة اللون متناسبة مع طبيعة فروة الرأس وشكل الوجه والنتيجة
+                    المرغوبة.</p>
                 <div class="about-sign reveal">
                     Kenan
-                    <small>15+ سنة خبرة</small>
+                    <small>📍 مكان العمل: Vida Center &amp; Salon — اللاذقية، سوريا</small>
                 </div>
             </div>
         </div>
@@ -1877,16 +1960,17 @@
                 <p class="eyebrow-word reveal" style="color:rgba(244,241,235,.5)">الموقع</p>
                 <h2 class="reveal">في قلب اللاذقية.</h2>
                 <div class="loc-addr reveal">
-                    <div>اللاذقية، سوريا</div>
-                    <div>الكورنيش الغربي</div>
+                    <div>📍 اللاذقية، سوريا</div>
+                    <div>📍 Vida Center &amp; Salon — الكورنيش الغربي</div>
+                    <div>📅 المواعيد مسبقة</div>
                 </div>
-                <a href="https://www.google.com/maps/search/?api=1&query=%D8%A7%D9%84%D9%83%D9%88%D8%B1%D9%86%D9%8A%D8%B4%20%D8%A7%D9%84%D8%BA%D8%B1%D8%A8%D9%8A%20%D8%A7%D9%84%D9%84%D8%A7%D8%B0%D9%82%D9%8A%D8%A9"
+                <a href="https://www.google.com/maps/search/?api=1&query=Vida%20Center%20and%20Salon%20%D8%A7%D9%84%D9%83%D9%88%D8%B1%D9%86%D9%8A%D8%B4%20%D8%A7%D9%84%D8%BA%D8%B1%D8%A8%D9%8A%20%D8%A7%D9%84%D9%84%D8%A7%D8%B0%D9%82%D9%8A%D8%A9"
                     target="_blank" rel="noopener" class="btn-primary reveal"
                     style="margin-top:30px;display:inline-block;">احصل على الاتجاهات</a>
             </div>
             <div class="loc-map reveal">
                 <iframe title="خريطة الموقع" loading="lazy"
-                    src="https://www.google.com/maps?q=%D8%A7%D9%84%D9%83%D9%88%D8%B1%D9%86%D9%8A%D8%B4%20%D8%A7%D9%84%D8%BA%D8%B1%D8%A8%D9%8A%20%D8%A7%D9%84%D9%84%D8%A7%D8%B0%D9%82%D9%8A%D8%A9&output=embed"></iframe>
+                    src="https://www.google.com/maps?q=Vida%20Center%20and%20Salon%20%D8%A7%D9%84%D9%83%D9%88%D8%B1%D9%86%D9%8A%D8%B4%20%D8%A7%D9%84%D8%BA%D8%B1%D8%A8%D9%8A%20%D8%A7%D9%84%D9%84%D8%A7%D8%B0%D9%82%D9%8A%D8%A9&output=embed"></iframe>
             </div>
         </div>
     </section>
@@ -1901,18 +1985,18 @@
             <div class="testi-track reveal">
                 <div class="testi-card">
                     <div class="testi-stars">★★★★★</div>
-                    <p class="testi-quote">[اقتباس تقييم العميل هنا]</p>
-                    <div class="testi-meta"><strong>[اسم العميل]</strong> — [نوع الجلسة]</div>
+                    <p class="testi-quote">النتيجة تجاوزت توقعاتي، خط الشعر صار طبيعياً جداً ومتناسق مع وجهي.</p>
+                    <div class="testi-meta"><strong>أحمد م.</strong> — تصميم خط شعر</div>
                 </div>
                 <div class="testi-card">
                     <div class="testi-stars">★★★★★</div>
-                    <p class="testi-quote">[اقتباس تقييم العميل هنا]</p>
-                    <div class="testi-meta"><strong>[اسم العميل]</strong> — [نوع الجلسة]</div>
+                    <p class="testi-quote">اهتمام كبير بالتفاصيل، وشرح واضح لكل خطوة قبل البدء. أنصح به بشدة.</p>
+                    <div class="testi-meta"><strong>محمد ك.</strong> — تحسين كثافة الشعر</div>
                 </div>
                 <div class="testi-card">
                     <div class="testi-stars">★★★★★</div>
-                    <p class="testi-quote">[اقتباس تقييم العميل هنا]</p>
-                    <div class="testi-meta"><strong>[اسم العميل]</strong> — [نوع الجلسة]</div>
+                    <p class="testi-quote">تجربة مريحة ونتيجة طبيعية جداً، ما حدا لاحظ إنه مو شعري الحقيقي.</p>
+                    <div class="testi-meta"><strong>سامر ع.</strong> — SMP للصلع</div>
                 </div>
             </div>
         </div>
@@ -1923,58 +2007,64 @@
         <div class="container">
             <div class="faq-head">
                 <p class="eyebrow-word reveal">الأسئلة الشائعة</p>
-                <h2 class="reveal">كل ما تحتاج معرفته.</h2>
+                <h2 class="reveal">كل ما تحتاج معرفته عن SMP.</h2>
             </div>
             <div id="faqList" class="reveal">
                 <div class="faq-item">
                     <button class="faq-q"><span>ما هي تقنية SMP؟</span><span class="plus">+</span></button>
                     <div class="faq-a">
-                        <p>هي تقنية دقيقة لوضع نقاط صبغة صغيرة على فروة الرأس، تحاكي مظهر بصيلات الشعر الطبيعية.</p>
+                        <p>SMP أو Scalp Micropigmentation هي تقنية تعتمد على وضع نقاط دقيقة في فروة الرأس لمحاكاة مظهر
+                            بصيلات الشعر وتحسين المظهر العام للكثافة وخط الشعر.</p>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-q"><span>هل تناسب تقنية SMP الجميع؟</span><span class="plus">+</span></button>
+                    <button class="faq-q"><span>هل تناسب SMP حالات الصلع الكامل؟</span><span
+                            class="plus">+</span></button>
                     <div class="faq-a">
-                        <p>تُقيَّم كل حالة على حدة خلال الاستشارة لتحديد مدى ملاءمة التقنية لحالتك تحديداً.</p>
+                        <p>نعم، يمكن أن تكون مناسبة للعديد من حالات الصلع، لكن النتيجة والتصميم المناسبان يعتمدان على
+                            حالة
+                            فروة الرأس والنتيجة التي يرغب بها الشخص.</p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-q"><span>كم جلسة أحتاج؟</span><span class="plus">+</span></button>
                     <div class="faq-a">
-                        <p>يختلف عدد الجلسات حسب الحالة، ويتم تحديده بدقة خلال الاستشارة الأولى.</p>
+                        <p>يختلف عدد الجلسات حسب الحالة والمساحة المطلوبة والنتيجة المستهدفة. يتم تحديد الخطة بعد تقييم
+                            الحالة.</p>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-q"><span>كم تستغرق الجلسة؟</span><span class="plus">+</span></button>
+                    <button class="faq-q"><span>هل يمكن عمل خط شعر جديد؟</span><span class="plus">+</span></button>
                     <div class="faq-a">
-                        <p>تختلف مدة الجلسة حسب مساحة العمل وتفاصيل الحالة، وسيتم توضيح ذلك خلال الاستشارة.</p>
+                        <p>نعم، يمكن تصميم خط شعر جديد بما يتناسب مع شكل الوجه والمظهر المطلوب، مع مراعاة أن يكون
+                            التصميم
+                            طبيعياً ومتناسقاً.</p>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-q"><span>هل نتائج SMP طبيعية المظهر؟</span><span class="plus">+</span></button>
+                    <button class="faq-q"><span>هل SMP هو زراعة شعر؟</span><span class="plus">+</span></button>
                     <div class="faq-a">
-                        <p>الهدف من كل جلسة هو نتيجة تنسجم مع ملامحك ولون بشرتك، بحيث تبدو جزءاً طبيعياً من مظهرك.</p>
+                        <p>لا، SMP ليست زراعة شعر ولا تنشئ بصيلات شعر حقيقية، بل هي تقنية تجميلية لتحسين المظهر البصري
+                            لفروة الرأس.</p>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-q"><span>هل يمكن استخدام SMP لتحسين مظهر كثافة الشعر؟</span><span
-                            class="plus">+</span></button>
+                    <button class="faq-q"><span>هل يمكن عمل SMP للشعر الخفيف؟</span><span class="plus">+</span></button>
                     <div class="faq-a">
-                        <p>نعم، في الحالات المناسبة تُستخدم التقنية لتحسين مظهر الكثافة بين الشعر الموجود.</p>
+                        <p>نعم، يمكن استخدام التقنية في بعض حالات الشعر الخفيف لتعزيز المظهر البصري للكثافة، بعد تقييم
+                            الحالة.</p>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-q"><span>كيف تتم العناية بعد الجلسة؟</span><span class="plus">+</span></button>
+                    <button class="faq-q"><span>أين تقدمون تقنية SMP؟</span><span class="plus">+</span></button>
                     <div class="faq-a">
-                        <p>سيتم شرح تعليمات العناية بعد الجلسة بشكل مفصل، لضمان أفضل نتيجة ممكنة.</p>
+                        <p>يتم تقديم الخدمة في اللاذقية — سوريا في Vida Center &amp; Salon، بمواعيد مسبقة.</p>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-q"><span>هل يمكنني معرفة مدى ملاءمة التقنية لي قبل البدء؟</span><span
-                            class="plus">+</span></button>
+                    <button class="faq-q"><span>كيف أحجز موعداً؟</span><span class="plus">+</span></button>
                     <div class="faq-a">
-                        <p>بالتأكيد. الاستشارة الأولى مخصصة تحديداً لتقييم حالتك ومناقشة النتيجة المتوقعة قبل أي التزام.
-                        </p>
+                        <p>للحجز والاستفسار يمكن التواصل على الرقم: 0998714043</p>
                     </div>
                 </div>
             </div>
@@ -1988,7 +2078,7 @@
             <p class="reveal">احجز استشارتك وتحدث معنا حول النتيجة التي ترغب في الوصول إليها.</p>
             <div class="final-ctas reveal">
                 <a href="#contact" class="btn-primary">احجز استشارتك</a>
-                <a href="https://wa.me/905352677267" target="_blank" rel="noopener" class="btn-ghost">تواصل عبر
+                <a href="https://wa.me/963998714043" target="_blank" rel="noopener" class="btn-ghost">تواصل عبر
                     واتساب</a>
             </div>
         </div>
@@ -2002,9 +2092,9 @@
                 style="font-family:var(--font-display);font-weight:500;font-size:clamp(30px,5.4vw,50px);margin:12px 0 40px;">
                 نسعد بالإجابة على استفساراتك.</h2>
             <div class="contact-grid reveal">
-                <a class="contact-item" href="https://wa.me/905352677267" target="_blank" rel="noopener">
+                <a class="contact-item" href="https://wa.me/963998714043" target="_blank" rel="noopener">
                     <span class="ci-label">واتساب</span>
-                    <span class="ci-value">+90 535 267 72 67</span>
+                    <span class="ci-value">0998714043</span>
                     <span class="ci-arrow">←</span>
                 </a>
                 <a class="contact-item" href="tel:0998714043">
@@ -2026,10 +2116,11 @@
     <footer>
         <div class="footer-grid">
             <span class="footer-brand">
-                <img src="logo.jpg" alt="Kenan.SMP.Syria" style="height: 24px; width: auto; display: inline-block;">
+                <img src="logo.jpg" alt="Kenan.SMP.Syria" style="height:24px;width:auto;display:inline-block;">
             </span>
-            <span>اللاذقية، سوريا — الكورنيش الغربي</span>
-            <span>@kenanhamadokh</span>
+            <span>Kenan.SMP.Syria — تقنية SMP لفروة الرأس</span>
+            <span>📍 اللاذقية، سوريا — 📅 المواعيد مسبقة — 📞 0998714043</span>
+            <span>© Kenan.SMP.Syria — جميع الحقوق محفوظة</span>
         </div>
     </footer>
 
@@ -2039,7 +2130,7 @@
     </div>
 
     <!-- ============ FLOATING WHATSAPP BUTTON ============ -->
-    <a href="https://wa.me/905352677267" target="_blank" rel="noopener" class="wa-float" id="waFloat"
+    <a href="https://wa.me/963998714043" target="_blank" rel="noopener" class="wa-float" id="waFloat"
         aria-label="تواصل معنا عبر واتساب">
         <span class="wa-ring"></span>
         <span class="wa-ring delay"></span>
@@ -2061,7 +2152,8 @@
         /* ---------- NAV SCROLL STATE ---------- */
         const nav = document.getElementById('nav');
         ScrollTrigger.create({
-            start: 60, end: 99999,
+            start: 60,
+            end: 99999,
             onUpdate: self => nav.classList.toggle('scrolled', self.scroll() > 60)
         });
 
@@ -2070,15 +2162,22 @@
         const mmClose = document.getElementById('mmClose');
         const mobileMenu = document.getElementById('mobileMenu');
         const mmLinks = document.querySelectorAll('#mmLinks a');
+
         function openMenu() {
             mobileMenu.classList.add('open');
+            mobileMenu.setAttribute('aria-hidden', 'false');
             document.body.style.overflow = 'hidden';
             document.getElementById('waFloat').style.opacity = '0';
             document.getElementById('waFloat').style.pointerEvents = 'none';
-            gsap.fromTo(mmLinks, { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: .5, stagger: .06, delay: .15, ease: 'power3.out' });
+            gsap.fromTo(mmLinks, { opacity: 0, y: 16 }, {
+                opacity: 1, y: 0, duration: .5, stagger: .06,
+                delay: .15, ease: 'power3.out'
+            });
         }
+
         function closeMenu() {
             mobileMenu.classList.remove('open');
+            mobileMenu.setAttribute('aria-hidden', 'true');
             document.body.style.overflow = '';
             document.getElementById('waFloat').style.opacity = '';
             document.getElementById('waFloat').style.pointerEvents = '';
@@ -2104,7 +2203,10 @@
         /* ---------- SCROLL REVEALS ---------- */
         document.querySelectorAll('.reveal').forEach(el => {
             gsap.to(el, {
-                opacity: 1, y: 0, duration: 1, ease: 'power3.out',
+                opacity: 1,
+                y: 0,
+                duration: 1,
+                ease: 'power3.out',
                 scrollTrigger: { trigger: el, start: 'top 88%' }
             });
         });
@@ -2146,6 +2248,7 @@
             ba.querySelector('.ba-before').style.clipPath = `inset(0 0 0 ${100 - pct}%)`;
             baBeforeInner.style.width = ba.offsetWidth + 'px';
             ba.setAttribute('aria-valuenow', Math.round(pct));
+            ba.setAttribute('aria-valuetext', `قبل ${Math.round(pct)}% بعد ${Math.round(100 - pct)}%`);
         }
         setBaPosition(50);
 
@@ -2154,17 +2257,28 @@
             let pct = ((clientX - rect.left) / rect.width) * 100;
             setBaPosition(pct);
         }
-        ba.addEventListener('mousedown', e => { baDragging = true; baPointerMove(e.clientX); });
+        ba.addEventListener('mousedown', e => {
+            baDragging = true;
+            baPointerMove(e.clientX);
+        });
         window.addEventListener('mousemove', e => { if (baDragging) baPointerMove(e.clientX); });
         window.addEventListener('mouseup', () => baDragging = false);
-        ba.addEventListener('touchstart', e => { baDragging = true; baPointerMove(e.touches[0].clientX); }, { passive: true });
+        ba.addEventListener('touchstart', e => {
+            baDragging = true;
+            baPointerMove(e.touches[0].clientX);
+        }, { passive: true });
         ba.addEventListener('touchmove', e => { if (baDragging) { baPointerMove(e.touches[0].clientX); } }, { passive: true });
         ba.addEventListener('touchend', () => baDragging = false);
         ba.addEventListener('keydown', e => {
-            const rect = ba.getBoundingClientRect();
             const current = parseFloat(ba.getAttribute('aria-valuenow')) || 50;
-            if (e.key === 'ArrowLeft') { setBaPosition(current + 4); e.preventDefault(); }
-            if (e.key === 'ArrowRight') { setBaPosition(current - 4); e.preventDefault(); }
+            if (e.key === 'ArrowLeft') {
+                setBaPosition(current + 4);
+                e.preventDefault();
+            }
+            if (e.key === 'ArrowRight') {
+                setBaPosition(current - 4);
+                e.preventDefault();
+            }
         });
         window.addEventListener('resize', () => setBaPosition(parseFloat(ba.getAttribute('aria-valuenow')) || 50));
 
@@ -2183,11 +2297,6 @@
                     a.style.maxHeight = a.scrollHeight + 'px';
                 }
             });
-        });
-
-        /* ---------- NEED CARD HOVER PARALLAX (subtle) ---------- */
-        document.querySelectorAll('.need-card').forEach(card => {
-            if (reduceMotion) return;
         });
     </script>
 </body>
